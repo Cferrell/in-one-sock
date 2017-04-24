@@ -1,0 +1,592 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+html{
+  font-size:16px;
+  font-family: 'Rubik', sans-serif;
+}
+
+
+
+
+/*** HEADER***/
+#header {
+  width: 100%;
+  background-color: rgba(128,128,128,0.5);
+  height: 70px;
+  position: fixed;
+  margin-top: 30px;
+  z-index: 5;
+}
+
+#logo {
+  position: relative;
+}
+
+#logo a {
+  color: #fff;
+  text-decoration: none;
+  float: left;
+  font-size: 2.5em;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+#logo a span {
+  color: black;
+}
+
+/***SLIDE 1***/
+#slide1 {
+  width: 100%;
+  background:url('../img/bluefade.jpg') 50% 0 no-repeat fixed;
+  color: #fff;
+  position: relative;
+  margin: 0;
+  background-size: cover;
+  padding: 160px 0 160px 0;
+
+}
+
+#cogs-one, #cogs-two {
+  display: none;
+  z-index: 2;
+}
+
+}
+.title {
+  position: relative;
+  z-index: 1;
+}
+
+h2, h1 {
+  text-align: center;
+  font-weight: 400;
+}
+
+h2{
+  line-height: 0px;
+  font-size: 2em;
+}
+
+h1{
+  font-size: 2.2em;
+}
+
+#ribbon {
+  background: url('../img/bluefade.jpg') no-repeat;
+  width: 90%;
+  height: 35px;
+  background-size: cover;
+  margin: 0 5% 0 5%;
+}
+
+#mobilenav ul {
+  display: block;
+  text-align: center;
+list-style: none;
+margin: 20px 0 0 0;
+padding: 0;
+}
+
+#mobilenav ul li {
+  padding-top: 15px;
+}
+
+#mobilenav ul li a {
+  text-decoration: none;
+  color: #fff;
+  opacity:0.6;
+  font-size: 1.1em;
+  text-decoration: none;
+ }
+
+#nav {
+  width: 60%;
+  float: right;
+  margin-top: 10px;
+}
+
+#nav ul {
+  list-style: none;
+  display: none;
+  padding-right: 10px;
+
+}
+
+#nav ul li {
+  float: left;
+  padding-left: 20px;
+}
+
+#nav ul li a{
+  color: #fff;
+  opacity: 0.6;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+#nav li a:active { color: #fff; opacity:1; border-bottom: 2px solid #fff; }
+#nav li a:hover { color: #fff; opacity:1; }
+
+
+
+
+/****SLIDE 2***/
+#slide2 {
+  width: 100%;
+  background-color: #fff;
+  color: #333333;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+}
+
+.wrapper {
+    /*add display:flex and set justify-content to space-between*/
+    font-weight: bold;
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+
+}
+
+.div-1, .div-2, .div-3 {
+    /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
+    line-height: 1.5em;
+    font-size: 1.1em;
+    height: auto;
+    display: flex;
+      width: 90%;
+    justify-content: center;
+      align-items: center;
+      padding-left: 15px;
+      z-index: 3;
+      background: white;
+}
+
+.div-1, .div-2 {
+    border-bottom: 1px solid #555;
+    padding-right: 25px;
+}
+.div-3 {
+  padding-right: 25px;
+}
+
+
+/****SLIDE 3***/
+#slide3{
+width: 100%;
+background: url(../img/desk.jpeg) 50% 0 no-repeat fixed;
+color: #fff;
+height: 600px;
+padding: 170px 0 0 0;
+background-size: cover;
+}
+
+.three {
+  font-weight: normal;
+  font-size: 30px;
+  text-align: left;
+  background: rgba(0,0,0,0.7);
+  z-index: 3;
+  padding-left: 10px;
+
+}
+
+
+
+/****SLIDE 4***/
+#slide4{
+  width: 100%;
+background-color: #fff;
+color: #333333;
+height: 300px;
+padding: 200px 0;
+
+}
+
+.four {
+  font-weight: normal;
+  font-size: 30px;
+  text-align: left;
+  margin: 50px auto;
+  background: rgba(0,0,0,0.2);
+  z-index: 3;
+  padding-left: 10px;
+
+}
+
+
+
+
+/****SLIDE 5***/
+#slide5{
+  width: 100%;
+background: url(../img/wild-1.jpg) 50% 0 no-repeat fixed;
+height: 200px;
+margin: 0 auto;
+padding: 250px 0;
+color: #fff;
+background-size: cover;
+}
+
+.five {
+  font-weight: normal;
+  font-size: 30px;
+  text-align: left;
+  margin: 50px auto;
+  background: rgba(0,0,0,0.7);
+  padding-left: 15px;
+  z-index: 3;
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 768px) {
+
+#slide1 {
+  padding: 260px 0 260px 0;
+}
+
+#cogs-one, #cogs-two {
+  display: inline;
+}
+#mobilenav {
+  display: none;
+}
+#nav ul {
+  display: block;
+}
+
+/*slide 2*/
+.wrapper {
+  flex-flow: row nowrap;
+}
+.div-3, .div-1, .div-2 {
+  width:30%;
+}
+.div-1, .div-2 {
+    border-right: 1px solid #555;
+    border-bottom: none;
+  }
+  #slide2 {
+    padding: 200px 0;
+    height: 300px;
+  }
+
+  /*slide 3*/
+  .three {
+  margin: 50px auto;
+  padding: 25px 25px 25px 225px;
+}
+
+/*slide 4*/
+.four {
+margin: 50px auto;
+padding: 25px 25px 25px 225px;
+}
+
+/*slide 5*/
+.five {
+margin: 50px auto;
+padding: 25px 25px 25px 225px;
+}
+
+}
+
+@media only screen and (min-width: 992px) {
+
+  html{
+    font-size: 1.3em;
+  }
+  #header {
+    height:80px;
+  }
+#nav ul li {
+  padding-left: 25px;
+}
+
+}
+
+@media only screen and (min-width: 1300px) {
+
+#nav ul {
+  padding-left: 150px;
+}
+#nav ul li a {
+  font-size: 1.1em;
+}
+}
+
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
