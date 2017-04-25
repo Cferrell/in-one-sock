@@ -272,6 +272,19 @@ padding: 0;
   padding-right: 25px;
 }
 
+#service {
+  color: red;
+  opacity: 0.7;
+}
+
+#serviceq {
+  color: grey;
+}
+
+#icon{
+  display: none;
+}
+
 
 /****SLIDE 3***/
 #slide3{
@@ -447,6 +460,8 @@ background-size: cover;
 /*slide 2*/
 .wrapper {
   flex-flow: row nowrap;
+  align-items: stretch;
+  margin-top: -100px;
 }
 .div-3, .div-1, .div-2 {
   width:30%;
@@ -456,8 +471,16 @@ background-size: cover;
     border-bottom: none;
   }
   #slide2 {
-    padding: 200px 0;
+    padding: 70px 0 220px 0;
     height: 300px;
+  }
+
+  #icon {
+    display: block;
+  }
+
+  #mobicon {
+    display: none;
   }
 
   /*slide 3*/
