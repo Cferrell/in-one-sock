@@ -18,6 +18,9 @@
         <link href="https://fonts.googleapis.com/css?family=Rubik:400,700" rel="stylesheet">
 
         <script src="https://use.fontawesome.com/67bea61f0f.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -27,22 +30,24 @@
         <!-- Add your site or application content here -->
 
 <!--HEADER -->
-<header id="header">
-<div id="logo"><a href=""><span> // </span>In One Sock </a></div>
-<nav id="nav">
- <ul>
- <li><a href="#slide2" class="active" title="Next Section" >Services</a></li>
- <li><a href="#slide3" title="Next Section">About Me</a></li>
- <li><a href="#slide4" title="Next Section">Portfolio</a></li>
- <li><a href="#slide4" title="Next Section">Blog</a></li>
- <li><a href="#slide5" title="Next Section">Contact</a></li>
- </ul>
-</nav>
-</header>
+
+
 
 <!--slide 1-->
 <div id="slide1">
 
+  <header id="header">
+  <div id="logo"><a href="#slide1"><span> // </span>In One Sock </a></div>
+  <nav id="nav">
+   <ul>
+   <li><a href="#goto" class="active" title="Next Section" >Services</a></li>
+   <li><a href="#slide3" title="Next Section">About Me</a></li>
+   <li><a href="#slide4" title="Next Section">Portfolio</a></li>
+   <li><a href="#slide4" title="Next Section">Blog</a></li>
+   <li><a href="#slide5" title="Next Section">Contact</a></li>
+   </ul>
+  </nav>
+  </header>
 
 <div class="title">
   <h2>Website</h2>
@@ -60,10 +65,10 @@
 
 <div id="mobilenav">
   <ul>
-  <li><a href="#slide1" class="active" title="Next Section" >Services</a></li>
-  <li><a href="#slide2" title="Next Section">Portfolio</a></li>
+  <li><a href="#slide2" class="active" title="Next Section" >Services</a></li>
   <li><a href="#slide3" title="Next Section">About Me</a></li>
-  <li><a href="#slide4" title="Next Section">Blog</a></li>
+  <li><a href="#slide4" title="Next Section">Portfolio</a></li>
+  <li><a href="#slide5" title="Next Section">Blog</a></li>
   <li><a href="#slide5" title="Next Section">Contact</a></li>
   </ul>
  </nav>
@@ -77,7 +82,7 @@
 
 <!--slide 2-->
 <div id="slide2">
-
+<h1><span id="goto"></span></h1>
     <img id="icon" src="img/wordpress.png" alt="WordPress" style="width: auto; position: relative; left: 40%; top: 5%; opacity:0.8;"/>
     <img id="icon" src="img/visual.png" alt="Visual Design" style="width: auto; position: relative; left: 74%; top: -37%; opacity:0.8;"/>
 
