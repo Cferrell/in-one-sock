@@ -1,0 +1,219 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>CF Travel Photos</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+<div id="heading">
+        <h2 style="text-align:center">When I'm not busy making great websites, I can be found travelling and discovering the world.</h2>
+        <h2 style="text-align:center">Click my photo to open a lightbox and enjoy a few of my pictures!</h2>
+</div>
+        <div class="row">
+  <div class="front">
+    <img src="img/front.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="fhover-shadow">
+  </div>
+
+
+  <!-- placeholders for extra pics -
+  <div class="column">
+    <img src="img/img2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img/img3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img/img4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div> -->
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 16</div>
+        <img src="img/img1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 16</div>
+        <img src="img/img2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 16</div>
+        <img src="img/img3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 16</div>
+        <img src="img/img4.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 16</div>
+        <img src="img/img5.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 16</div>
+        <img src="img/img6.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 16</div>
+        <img src="img/img7.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 16</div>
+        <img src="img/img8.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">9 / 16</div>
+        <img src="img/img9.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">10 / 16</div>
+        <img src="img/img10.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">11 / 16</div>
+        <img src="img/img11.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">12 / 16</div>
+        <img src="img/img12.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">13 / 16</div>
+        <img src="img/img13.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">14 / 16</div>
+        <img src="img/img14.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">15 / 16</div>
+        <img src="img/img15.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">16 / 16</div>
+        <img src="img/img16.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/img1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Ubud, Bali">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/img2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Desa Seni Resort, Canggu, Bali">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/img3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Jalan Mesari Beach, Seminyak, Indonesia">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/img4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Paris, France">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/img5.jpg" style="width:100%" onclick="currentSlide(4)" alt="Ao Nang, Thailand">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/img6.jpg" style="width:100%" onclick="currentSlide(4)" alt="Railey Beach, Thailand">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/img7.jpg" style="width:100%" onclick="currentSlide(4)" alt="Phuket, Thailand">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/img8.jpg" style="width:100%" onclick="currentSlide(4)" alt="Ko Yoh Noi, Thailand">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/img9.jpg" style="width:100%" onclick="currentSlide(4)" alt="Bangkok, Thailand">
+    </div>
+
+        <div class="column">
+      <img class="demo" src="img/img10.jpg" style="width:100%" onclick="currentSlide(4)" alt="Sydney, Australia">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/img11.jpg" style="width:100%" onclick="currentSlide(4)" alt="Cayo Coco, Cuba">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/img12.jpg" style="width:100%" onclick="currentSlide(4)" alt="Cozumel, Mexico">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/img13.jpg" style="width:100%" onclick="currentSlide(4)" alt="New York City, New York">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/img14.jpg" style="width:100%" onclick="currentSlide(4)" alt="Fez, Morocco">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/img15.jpg" style="width:100%" onclick="currentSlide(4)" alt="Marrakech Medina, Morocco">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/img16.jpg" style="width:100%" onclick="currentSlide(4)" alt="Stone Dessert Camp, Morocco">
+    </div>
+
+      </div>
+</div>
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>

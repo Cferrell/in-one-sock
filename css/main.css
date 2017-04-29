@@ -464,8 +464,8 @@ margin-left: 5px;
   width: 100%;
 background-color: #fff;
 color: #333333;
-height: 700px;
-padding: 50px 0;
+height: 500px;
+padding: 15px 0;
 
 }
 
@@ -485,12 +485,12 @@ padding: 50px 0;
   font-weight: normal;
   font-size: 1.6em;
   text-align: left;
-  margin: 50px auto;
   background: rgba(0,0,0,0.2);
   z-index: 3;
   padding-left: 10px;
 
 }
+
 
 #links .pcard {
     /* Add shadows to create the "card" effect */
@@ -544,7 +544,7 @@ padding: 50px 0;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-width: 75%;
+width: 70%;
 margin-left: 25px;
     }
 
@@ -567,23 +567,34 @@ margin-left: 25px;
 /****SLIDE 5***/
 #slide5{
   width: 100%;
-background: url(../img/wild-1.jpg) 50% 0 no-repeat fixed;
-height: 200px;
+background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.3) 100%), url(../img/wild-1.jpg) 50% 0 no-repeat fixed;
+height: 400px;
 margin: 0 auto;
-padding: 250px 0;
+padding: 50px 0;
 color: #fff;
 background-size: cover;
 }
 
+
 .five {
   font-weight: normal;
-  font-size: 30px;
+  font-size: 1.2em;
   text-align: left;
   margin: 50px auto;
   background: rgba(0,0,0,0.7);
   padding-left: 15px;
   z-index: 3;
 
+}
+
+#email {
+  padding: 0 20px;
+}
+
+.five a {
+  text-decoration: underline;
+  color: #fff;
+  opacity: 0.7;
 }
 
 
@@ -673,6 +684,15 @@ background-size: cover;
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media only screen and (max-width: 767px) {
+#slide5{
+  background: url(../img/bluefade.jpg) 50% 0 no-repeat fixed;
+  background-size: cover;
+}
+
+}
+
+
 @media only screen and (min-width: 768px) {
 
 #slide1 {
@@ -789,6 +809,11 @@ background-size: cover;
 }
 
 /*slide 4*/
+
+#slide4 {
+  height: 600px;
+  padding: 50px 0;
+}
 .four {
 margin: 50px auto;
 padding: 15px 15px 15px 195px;
@@ -802,10 +827,11 @@ font-size: 1.5em;
   }
 
   #links .pcard {
-      margin: 0 20px 0 20px;
+      margin: 0 5px 0 5px;
       display: block;
       justify-content: center;
       height: auto;
+      width: 80%;
   }
 
 #links .container {
@@ -819,7 +845,7 @@ font-size: 1.5em;
 
 #links .mobimg{
     height: auto;
-    width: auto;
+    width: 100%;
     padding: 0;
   }
 
@@ -830,12 +856,17 @@ font-size: 1.5em;
 }
 
 #links {
-  width: 100%;
+  width: auto;
   display: flex;
+  justify-content: center;
 }
 
 
 /*slide 5*/
+
+#slide5 {
+  height: 600px;
+}
 .five {
 margin: 50px auto;
 padding: 25px 25px 25px 225px;
@@ -881,6 +912,11 @@ padding: 25px 25px 25px 225px;
   }
 
   /*slide 4*/
+
+  #slide4 {
+    height: 680px;
+  }
+
   .four {
   padding: 15px 5px 15px 190px;
   }
