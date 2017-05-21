@@ -793,6 +793,7 @@ background-size: cover;
   margin: 10px auto 20px auto;
   padding: 25px 25px 25px 25px;
   z-index: 910;
+  font-size: 1.2em;
 }
 
 #slide3 {
@@ -844,17 +845,17 @@ background-size: cover;
 
 #slide4 {
   height: 600px;
-  padding: 50px 0;
+  padding-bottom: 50px;
 }
 .four {
-margin: 50px auto;
+margin: 30px auto;
 padding: 15px 15px 15px 15px;
 text-align: center;
 font-size: 1.5em;
 }
 
 #portfolio {
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: stretch;
   }
@@ -889,9 +890,10 @@ font-size: 1.5em;
 }
 
 #links {
-  width: auto;
+  width: 25%;
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 
@@ -957,24 +959,41 @@ text-align: center;
 
   #slide3 {
     height: 720px;
+    padding-top:20px;
   }
 
+  .three {
+  margin: 0 auto 10px auto;
+  font-size: 1.1em;
+}
   /*slide 4*/
 
   #slide4 {
-    height: 680px;
+    height: 780px;
   }
 
 }
 
 @media only screen and (min-width: 1300px) {
 
+/*slide 1*/
 #nav ul {
   padding-left: 150px;
 }
 
 #header.sticky #nav ul {
   padding-left: 150px;
+}
+
+/*slide 4*/
+
+#slide4 {
+  height: 600px;
+  padding-top: 50px;
+}
+
+#links {
+  width: 20%;
 }
 
 }
