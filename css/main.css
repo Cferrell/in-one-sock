@@ -99,6 +99,9 @@ html{
   font-family: 'Rubik', sans-serif;
 }
 
+html, body {
+  height: 100%;
+}
 
 
 
@@ -155,7 +158,7 @@ html{
 /*  position: relative;*/
   margin: 0px;
   background-size: cover;
-  padding: 160px 0 220px 0;
+  padding: 160px 0 160px 0;
 
 }
 
@@ -173,11 +176,16 @@ html{
 h2, h1 {
   text-align: center;
   font-weight: 400;
+  line-height: 1em;
 }
 
 h2{
   line-height: 0px;
   font-size: 2em;
+}
+
+.pm {
+  line-height: 1.5em;
 }
 
 h1{
@@ -201,14 +209,14 @@ padding: 0;
 }
 
 #mobilenav ul li {
-  padding-top: 15px;
+  padding-top: 25px;
 }
 
 #mobilenav ul li a {
   text-decoration: none;
   color: #fff;
-  opacity:0.6;
-  font-size: 1.1em;
+  opacity:0.8;
+  font-size: 1.3em;
   text-decoration: none;
  }
 
@@ -223,7 +231,7 @@ padding: 0;
 }
 
 #header.sticky #nav ul li {
-  padding-left: 40px;
+  padding-left: 50px;
 }
 
 #nav ul {
@@ -696,7 +704,7 @@ background-size: cover;
 @media only screen and (min-width: 768px) {
 
 #slide1 {
-  padding: 260px 0 280px 0;
+  padding: 270px 0 260px 0;
 }
 
 #cogs-one, #cogs-two {
@@ -710,11 +718,11 @@ background-size: cover;
 }
 
 #nav ul li {
-  padding-left: 25px;
+  padding-left: 30px;
 }
 
 #header.sticky #nav ul li{
-  padding-left: 15px;
+  padding-left: 26px;
 }
 
 #header.sticky #nav ul{
@@ -744,7 +752,7 @@ background-size: cover;
     border-bottom: none;
   }
   #slide2 {
-    padding: 70px 0 220px 0;
+    padding: 100px 0 220px 0;
     height: 300px;
   }
 
@@ -879,6 +887,11 @@ padding: 25px 25px 25px 225px;
   html{
     font-size: 1.3em;
   }
+
+  #slide1 {
+    padding: 220px 0 220px 0;
+  }
+
   #header {
     height:80px;
   }
@@ -888,11 +901,13 @@ padding: 25px 25px 25px 225px;
 
   }
 
-
+  #nav ul li {
+    padding-left: 40px;
+  }
 
   #header.sticky #nav ul li {
-    font-size: 0.9em;
-    padding-left: 25px;
+    font-size: 1.1em;
+    padding-left: 35px;
   }
 
   #header.sticky #logo a {
@@ -903,6 +918,10 @@ padding: 25px 25px 25px 225px;
 
   .div-1, .div-2, .div-3 {
     font-size: .8em;
+  }
+
+  #slide2 {
+    padding: 75px 0 220px 0;
   }
 
   /*slide 3*/
