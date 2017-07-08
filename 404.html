@@ -12,7 +12,7 @@
         }
 
         html {
-            color: #888;
+            color: white;
             display: table;
             font-family: sans-serif;
             height: 100%;
@@ -24,10 +24,14 @@
             display: table-cell;
             vertical-align: middle;
             margin: 2em auto;
+            background-image: url("https://media.giphy.com/media/xOBybPJGY5cUE/giphy.gif");
+            /*background-image: url("https://media.giphy.com/media/dwaeIbBnF6HBu/giphy.gif");*/
+            background-repeat: no-repeat;
+            background-size:cover;
         }
 
         h1 {
-            color: #555;
+            color: white;
             font-size: 2em;
             font-weight: 400;
         }
@@ -35,6 +39,21 @@
         p {
             margin: 0 auto;
             width: 280px;
+        }
+
+        .button {
+          color: white;
+          font-weight: bold;
+          background-color: #309ba2;
+          text-align: center;
+          text-decoration: none;
+          padding: 20px 20px;
+          font-size: 28px;
+
+        }
+
+        .return {
+          margin-top: 100px;
         }
 
         @media only screen and (max-width: 280px) {
@@ -46,7 +65,7 @@
             h1 {
                 font-size: 1.5em;
                 margin: 0 0 0.3em;
-            }
+                      }
 
         }
 
@@ -55,6 +74,9 @@
 <body>
     <h1>Page Not Found</h1>
     <p>Sorry, but the page you were trying to view does not exist.</p>
+    <div class="return">
+      <a class="button" href="http://inonesock.com" class="button">BACK TO MAIN</a>
+    </div>
 </body>
 </html>
 <!-- IE needs 512+ bytes: http://blogs.msdn.com/b/ieinternals/archive/2010/08/19/http-error-pages-in-internet-explorer.aspx -->
